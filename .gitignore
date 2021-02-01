@@ -1,0 +1,12 @@
+.idea/
+*.ipr
+*.iml
+*.iws
+*.png
+*.txt
+*.class
+CREDITS
+*.zip
+.*
+!.gitignore
+META-INF
