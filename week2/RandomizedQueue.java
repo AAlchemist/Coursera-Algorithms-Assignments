@@ -1,8 +1,3 @@
-/* *****************************************************************************
- *  Name:              Alan Turing
- *  Coursera User ID:  123456
- *  Last modified:     1/1/2019
- **************************************************************************** */
 
 package week2;
 
@@ -86,7 +81,7 @@ public class RandomizedQueue<Item> implements Iterable<Item> {
         private int index = 0;
 
         public queueIterator() {
-            randomQ = (Item[]) new Object[size];
+            randomQ = (Item[]) new Object[size]; // 无法初始化Generics数组，所以用到类型转换
             for (int i = 0; i < size; ++i) randomQ[i] = queue[i];
             StdRandom.shuffle(randomQ);
         }

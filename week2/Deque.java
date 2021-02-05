@@ -1,9 +1,3 @@
-/* *****************************************************************************
- *  Name:              Alan Turing
- *  Coursera User ID:  123456
- *  Last modified:     1/1/2019
- **************************************************************************** */
-
 package week2;
 
 import edu.princeton.cs.algs4.StdIn;
@@ -13,6 +7,7 @@ import java.util.Iterator;
 import java.util.NoSuchElementException;
 
 public class Deque<Item> implements Iterable<Item> {
+
 
     private int size;
     private Node first;
@@ -91,6 +86,8 @@ public class Deque<Item> implements Iterable<Item> {
     }
 
     // return an iterator over items in order from front to back
+    // 实现Iterable接口就要实现Iterator()
+    @Override
     public Iterator<Item> iterator() {
         return new ListIterator();
     }
